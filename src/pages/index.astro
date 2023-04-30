@@ -20,10 +20,10 @@ import "./global.css";
           <br />
           <br />
           <br />
-          <h1 class="text-[10rem] font-mono text-white uppercase">The Rise</h1>
-          <p class="text-3xl text-white uppercase font-mono mb-2">
+          <h1 class="text-[6rem] sm:text-[10rem] font-mono text-white uppercase">Uspon</h1>
+          <!-- <p class="text-3xl text-white uppercase font-mono mb-2">
             Regionalna zvijezda u novom odijelu
-          </p>
+          </p> -->
           <h3
             class="text-6xl text-white font-mono"
             style="font-family: hacked;"
@@ -34,16 +34,18 @@ import "./global.css";
           <br />
           <br />
           <p class="text-xl text-white font-mono">
-            Release date announced soon.
+            U novom izdanju i s novom energijom
           </p>
           <br />
-          <div class="w-full flex">
-            <button
-              class="mx-auto py-5 px-10 text-white uppercase text-xl"
-              style="font-family: hacked; background-image: url(/background-static.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
-            >
-              Listen now
-            </button>
+          <div class="w-full flex justify-center">
+            <a href="https://www.youtube.com/@EBNERofficial">
+              <button
+                class="mx-auto py-5 px-10 text-white uppercase text-xl"
+                style="font-family: hacked; background-image: url(/background-static.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+              >
+                Listen now
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -61,7 +63,7 @@ import "./global.css";
           loading="lazy"></iframe>
       </div>
     </div>
-    <div class="w-screen h-[80vh] relative">
+    <div class="w-screen relative">
       <video
         class="object-cover object-center h-full w-full"
         src="/3d-render-background.mp4"
@@ -74,41 +76,47 @@ import "./global.css";
       <div class="w-full h-full absolute top-0 left-0 flex">
         <div class="container m-auto text-center">
           <h1 class="text-5xl uppercase font-mono text-white">
-            Latest Singles
+            Najnoviji singlovi
           </h1>
           <br />
           <br />
           <br />
           <div class="w-full flex items-center justify-center gap-10">
-            <div class="w-80 h-80">
-              <img
-                class="w-full h-full"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEUAAAD3Pfg+1D1E5Pr///8uCVn4NzAPEBQ+0Of+8VX/8lYPDw+lpaUXFxf2Pvv4Pcz5NR/kSOY10jT29vbG7nk8PDxE5f4fHx9K7P8AAAhG2kUXLxxDy0PiRvP8RfsZRExR2fseMTkYAE4OBRa7ssI5FzlC3Jubm5v20Pb6PjdQUFA5ExHyLvMlDEbk5OTQ0ND07F+4uLjpOTf//GM2NCNtGoeIJogADABZG1hCy948scItLS2tra0/3JCPj49HR0eAgIBbW1vZ2dlvb280NDQxMykfMzYZLyQZLxQ7FjPkUeLF6IZLz5pHxEbIVNjgScHoNSZJAE+DDoJHxOU6qsbVzdX41PbFk81hAIBGEWUuP3ZQAAAD7klEQVR4nO3b6VrTQBQG4JQiCmkLtrSIYlFRoqiNuKFSWqiKuO/b/d+IQylNm8xMw8kkZk6/7xfNMdO8zhmyPMSZV2W5SExjszpDTPVigZTK4tKcKg6EEEKYS+ECeyH/OYQQwpwJF8Yz+DXDSch/DiGEEEIIIYQQQlzTQAghhBBCCOFc9Hy4wO98CKH9Qv7rkL+Qf5dCaL+Q/zrkL+TfpRDaL+S/DvkL+XcphPYL+a9D/kL+XQqh/UL+65C/kH+XQmi/kP865C/k36UQ2i/kvw75C/l3KYT2C/mvQ/5C/l0Kof1C/uuQv5B/l0Jov5D/OjQvLCYRVmghdmmDNoV0YVUISVOoFT5SZfkSNZszl4kRXdokZXHpjioOgiAIgiAIgiAIgiDTlvJKNO6w6oZLsn2DDSefy8lHNpnSbC2c2c6w6oWrdcm+wbZW/3Mv+chmhdF46mpdsm+wrdb/3Eo+8n8Urkj2NSNMrU1Pj9ItB3HD1e5x1T0QPwlDJ7KvVtiNOfLs6MhpCGNUtxTzoBeSRjYZA8Ld4Qauwl6vt3+ygasw2AZh7JFNxoyw5fvbDmvhwJVn4W6MapckJI1sMoNvapdOI7tq6Ve97eOD6HS2wlWvs++LawGv5MmEMUYuRUZOQRhEduUZ5JWkKra1w7OZcOScCetGhGlfeW8Ps6usilYUveRFulQc2/5JVSacOHIrG2GS3zT10WpEOHHkdjbC5FfeWwrhxJEHwrTXYXJh1/d90vmwI3YUP708OEgHafTuqUUROsMOLyXnTPomfXV67w8hJIxsMlMj7Jalz21Hq+X+k6hW7axPorQjZydUPLcdr/aPyI3sqxfqR85OOJYMnwhnIGxrjyNSrUv2VQhjjZyBcPR5bfS5baQq2zfYMPaPYo08+LQSqiIIgiAIgiAIgiBIvDxW5fV1Ug4PD98cXaHl6OgWMW/vKpPGO6R7Veo7pGvvSG/JFgpneQ94PuF7wI1GcS/rd7krWmEK73JnLsz8bXUIcyOkvY4vVuIeFQhhfoS2dCkRCKFeSDvjQ2hYmLezxQNV3l+j5sMaNR8/XaXl85eHqqhvOr5W7hHzzVklxvl+gZYfmrsnV5GdZ7SGEZfBT3fc87Q4z4nCF0qHqxE2iUS60IUwJ8ImeyHmMD9C6hTaI0SXYg7zL6QC7ZnD7IVZX7VRhfZcl3IRqu+etHdIBdXNeLPfpRriyJdnI/RV+Xlbk1+//zxR5u/9uNkY/09dddap0dwfSv54NU5u3jhnIBuaAzMWCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIZwq4T/YHjhz6ki8RwAAAABJRU5ErkJggg=="
-                alt=""
-              />
-            </div>
-            <div class="w-80 h-80">
-              <img
-                class="w-full h-full"
-                src="https://dertmusic.com/wp-content/uploads/2022/06/rsz_563837cf-8b48-5283-1ba3-e3637031d9a9-1024x1024.jpg"
-                alt=""
-              />
-            </div>
+            <a href="https://www.youtube.com/watch?v=sw2EDCRs6eQ" target="_blank">
+              <div class="w-20 h-20 sm:w-80 sm:h-80">
+                <img
+                  class="w-full h-full"
+                  src="https://e-cdn-images.dzcdn.net/images/cover/d2bcebbbc8fa517f6b8f322cad5c03af/264x264-000000-80-0-0.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=V8B3JEJpuCE" target="_blank">
+              <div class="w-20 h-20 sm:w-80 sm:h-80">
+                <img
+                  class="w-full h-full"
+                  src="https://dertmusic.com/wp-content/uploads/2022/06/rsz_563837cf-8b48-5283-1ba3-e3637031d9a9-1024x1024.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
           </div>
           <br />
           <br />
-          <button
-            class="mx-auto py-5 px-10 bg-white text-black uppercase text-xl shadow"
-            style="font-family: hacked;"
-          >
-            More music
-          </button>
+          <a href="https://www.youtube.com/@EBNERofficial" target="_blank">
+            <button
+              class="mx-auto py-5 px-10 bg-white text-black uppercase text-xl shadow"
+              style="font-family: hacked;"
+            >
+              Još muzike
+            </button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="w-full flex bg-gray-100">
+    <!-- <div class="w-full flex bg-gray-100">
       <div class="container mx-auto p-20">
-        <h1 class="text-center text-4xl font-mono uppercase">Shop Music Now</h1>
+        <h1 class="text-center text-4xl font-mono uppercase">Nabavi svoju kopiju</h1>
         <br />
         <br />
         <div class="w-full flex items-center justify-center gap-7">
@@ -131,10 +139,10 @@ import "./global.css";
           >
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="w-full flex bg-gray-200">
       <div class="container mx-auto p-20">
-        <h1 class="text-center text-4xl font-mono uppercase">Show Your Love</h1>
+        <h1 class="text-center text-4xl font-mono uppercase">Poslušaj najnovije hitove</h1>
         <br />
         <br />
         <div class="w-full flex items-center justify-center gap-7">
@@ -160,42 +168,42 @@ import "./global.css";
       <div class="absolute top-0 left-0 w-full h-full bg-black/25"></div>
       <div class="w-full h-full absolute top-0 left-0 flex">
         <div class="container m-auto">
-          <h3 class="font-mono text-white text-3xl text-center">Next event</h3>
+          <h3 class="font-mono text-white text-3xl text-center">Sljedeći live</h3>
           <div class="w-full flex my-3">
             <div class="border-t-2 border-white w-32 mx-auto"></div>
           </div>
           <br />
           <h3 class="font-mono text-white text-4xl text-center">
-            Sarajevo, Bosnia & Herzegovina
+            Uskoro najavljeno
           </h3>
           <br />
           <br />
           <br />
           <div class="w-full flex justify-center items-start gap-10">
             <div>
-              <h1 class="text-9xl font-bold text-white mb-2">00</h1>
+              <h1 class="text-2xl sm:text-9xl font-bold text-white mb-2">00</h1>
               <p class="text-xl text-white uppercase text-center font-bold">
-                Days
+                Dana
               </p>
             </div>
             <div>
-              <h1 class="text-9xl font-bold text-white mb-2">00</h1>
+              <h1 class="text-2xl sm:text-9xl font-bold text-white mb-2">00</h1>
               <p class="text-xl text-white uppercase text-center font-bold">
-                Hours
+                Sati
+              </p>
+            </div>
+            <!-- <div>
+              <h1 class="text-2xl sm:text-9xl font-bold text-white mb-2">00</h1>
+              <p class="text-xl text-white uppercase text-center font-bold">
+                Minuta
               </p>
             </div>
             <div>
-              <h1 class="text-9xl font-bold text-white mb-2">00</h1>
+              <h1 class="text-2xl sm:text-9xl font-bold text-white mb-2">00</h1>
               <p class="text-xl text-white uppercase text-center font-bold">
-                Minutes
+                Sekundi
               </p>
-            </div>
-            <div>
-              <h1 class="text-9xl font-bold text-white mb-2">00</h1>
-              <p class="text-xl text-white uppercase text-center font-bold">
-                Seconds
-              </p>
-            </div>
+            </div> -->
           </div>
           <br />
           <br />
@@ -205,7 +213,7 @@ import "./global.css";
               class="mx-auto py-5 px-10 text-black bg-white uppercase text-xl"
               style="font-family: hacked;"
             >
-              See All Details
+              Uskoro
             </button>
           </div>
         </div>
@@ -213,7 +221,7 @@ import "./global.css";
     </div>
     <div class="w-full flex bg-gray-100">
       <div class="container mx-auto py-20 text-center">
-        <h1 class="font-mono text-4xl uppercase">From The Gallery</h1>
+        <h1 class="font-mono text-4xl uppercase">Iz galerije</h1>
       </div>
     </div>
     <div class="w-full flex">
@@ -293,7 +301,7 @@ import "./global.css";
             class="underline">Kahvana</a
           >
         </p>
-        <a href="https://instagram.com" class="text-white ml-auto"
+        <a href="https://www.instagram.com/_ebner_" class="text-white ml-auto"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -307,7 +315,7 @@ import "./global.css";
             ></path>
           </svg></a
         >
-        <a href="https://facebook.com" class="text-white ml-5"
+        <a href="https://www.facebook.com/davorebner" class="text-white ml-5"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -320,6 +328,21 @@ import "./global.css";
               d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
             ></path>
           </svg></a
+        >
+        <a href="https://open.spotify.com/artist/3HZrXknGhdc2Cs6VhYWc2G" class="text-white ml-5"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-spotify"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z" />
+          </svg></a
+        >
+        <a href="https://www.tiktok.com/@ebner.official" class="text-white ml-5"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/> </svg></a
         >
       </div>
     </div>

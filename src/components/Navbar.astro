@@ -1,20 +1,28 @@
 ---
+import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-navbar";
 ---
 
-<div class="w-full flex absolute top-0 z-50 text-white">
-  <div class="container mx-auto py-16 flex items-center">
-    <ul class="flex ml-auto items-center">
-      <li class="mx-8 uppercase text-lg font-light font-mono">News</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">Events</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">About</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">Music</li>
-    </ul>
-    <h1 class="text-5xl mx-10" style="font-family: hacked;">EBNER</h1>
-    <ul class="mr-auto flex items-center">
-      <li class="mx-8 uppercase text-lg font-light font-mono">Pages</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">Shop</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">Contact</li>
-      <li class="mx-8 uppercase text-lg font-light font-mono">Buy</li>
-    </ul>
-  </div>
-</div>
+<header class="lg:flex p-5 gap-5 bg-transparent w-full absolute top-0 z-50">
+  <Astronav>
+    <div class="flex w-full justify-end lg:hidden">
+      <div class="block lg:hidden">
+        <MenuIcon class="w-10 h-10 text-white" />
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex justify-center w-full text-white">
+      <div class="container mx-auto py-16 flex flex-col sm:flex-row items-center">
+        <ul class="flex ml-auto items-center">
+          <li class="mx-8 uppercase text-lg font-light font-mono">Biografija</li>
+          <li class="mx-8 uppercase text-lg font-light font-mono">
+            <a href="/muzika">Muzika</a>
+          </li>
+        </ul>
+        <a href="/"><h1 class="text-5xl mx-10" style="font-family: hacked;">EBNER</h1></a>
+        <ul class="mr-auto flex items-center">
+          <li class="mx-8 uppercase text-lg font-light font-mono"><a href="/kontakt">Kontakt</a></li>
+          <li class="mx-8 uppercase text-lg font-light font-mono"><a href="/novosti">Novosti</a></li>
+        </ul>
+      </div>
+    </MenuItems>
+  </Astronav>
+</header>
