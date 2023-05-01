@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "./global.css";
+---
+
+<Layout title="Biografija">
+  <main>
+    <div
+      class="w-screen h-screen relative bg-center bg-no-repeat bg-cover overflow-hidden"
+      style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/Ebner.jpeg');"
+    >
+      <div class="w-full h-full flex">
+        <div class="mx-auto text-center mb-10">
+          <h1
+            class="text-5xl sm:text-[10rem] font-mono text-white uppercase mt-20 sm:mt-40"
+          >
+            Biografija
+          </h1>
+          <h3
+            class="text-6xl text-white font-mono mt-5"
+            style="font-family: hacked;"
+          >
+            EBNER
+          </h3>
+          <p class="text-xl text-white font-mono mt-5">
+            Znamo li zapravo uistinu tko je Davor Ebner?
+          </p>
+          <div class="w-full flex justify-center mt-10">
+            <a href="https://www.youtube.com/@EBNERofficial">
+              <button
+                class="mx-auto py-5 px-10 text-white uppercase text-xl"
+                style="font-family: hacked; background-image: url(/background-static.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+              >
+                Listen now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-screen bg-[#2c2c2c] p-4">
+      <div class="w-full h-full flex">
+        <div class="flex flex-col sm:flex-row sm:gap-10">
+          <img class="rounded" src="/ebner-solo.jpeg" alt="Davor Ebner" />
+          <div class="flex flex-col gap-10 font-mono text-white">
+            <h1 class="text-5xl uppercase font-mono text-white my-5">
+              Davor Ebner
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

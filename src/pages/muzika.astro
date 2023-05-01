@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "./global.css";
+---
+
+<Layout title="Muzika">
+  <main>
+    <div
+      class="w-screen h-screen relative bg-center bg-no-repeat bg-cover overflow-hidden"
+      style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/Ebner.jpeg');"
+    >
+      <div class="w-full h-full flex">
+        <div class="mx-auto text-center mb-10">
+          <h1
+            class="text-[6rem] sm:text-[10rem] font-mono text-white uppercase mt-20 sm:mt-40"
+          >
+            Muzika
+          </h1>
+          <h3
+            class="text-6xl text-white font-mono"
+            style="font-family: hacked;"
+          >
+            EBNER
+          </h3>
+          <p class="text-xl text-white font-mono mt-5">
+            Na youtuve kanalu možete pratiti najnovije singlove koje Ebner bend
+            pravi
+          </p>
+          <div class="w-full flex justify-center mt-10">
+            <a href="https://www.youtube.com/@EBNERofficial">
+              <button
+                class="mx-auto py-5 px-10 text-white uppercase text-xl"
+                style="font-family: hacked; background-image: url(/background-static.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+              >
+                Listen now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#2c2c2c] flex w-full py-10 px-4">
+      <div class="container mx-auto flex">
+        <iframe
+          class="mx-auto w-full max-w-xl"
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/4WEs3KEFu3cYAzCv2Y5BUy?utm_source=generator&theme=0"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="w-screen relative">
+      <video
+        class="object-cover object-center h-screen w-screen"
+        src="/3d-render-background.mp4"
+        autoplay
+        loop
+        muted
+        playsinline></video>
+      <div class="absolute top-0 left-0 w-full h-full bg-black/25"></div>
+      <div class="w-full h-full absolute top-0 left-0 flex">
+        <div class="container m-auto text-center">
+          <h1 class="text-5xl uppercase font-mono text-white mb-10">
+            Najnoviji singlovi
+          </h1>
+          <div class="w-full flex items-center justify-center gap-10 mb-10">
+            <a
+              href="https://www.youtube.com/watch?v=sw2EDCRs6eQ"
+              target="_blank"
+            >
+              <div class="w-20 h-20 sm:w-80 sm:h-80">
+                <img
+                  class="w-full h-full"
+                  src="https://e-cdn-images.dzcdn.net/images/cover/d2bcebbbc8fa517f6b8f322cad5c03af/264x264-000000-80-0-0.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=V8B3JEJpuCE"
+              target="_blank"
+            >
+              <div class="w-20 h-20 sm:w-80 sm:h-80">
+                <img
+                  class="w-full h-full"
+                  src="https://dertmusic.com/wp-content/uploads/2022/06/rsz_563837cf-8b48-5283-1ba3-e3637031d9a9-1024x1024.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <a href="https://www.youtube.com/@EBNERofficial" target="_blank">
+            <button
+              class="mx-auto py-5 px-10 bg-white text-black uppercase text-xl shadow"
+              style="font-family: hacked;"
+            >
+              Još muzike
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
