@@ -1,26 +1,38 @@
 ---
-import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-navbar";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 ---
 
-<header class="lg:flex p-5 gap-5 bg-transparent w-full absolute top-0 z-50">
+<header class="lg:flex p-4 gap-5 bg-transparent w-full absolute top-0 z-50">
   <Astronav>
     <div class="flex w-full justify-end lg:hidden">
       <div class="block lg:hidden">
-        <MenuIcon class="w-10 h-10 text-white" />
+        <MenuIcon class="w-8 h-8 text-white" />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex justify-center w-full text-white">
-      <div class="container mx-auto py-16 flex flex-col sm:flex-row items-center">
+    <MenuItems
+      class="hidden lg:flex justify-center lg:bg-transparent bg-[#a9a6a6] w-full text-white rounded"
+    >
+      <div
+        class="container mx-auto py-16 flex flex-col sm:flex-row items-center"
+      >
         <ul class="flex ml-auto items-center">
-          <li class="mx-8 uppercase text-lg font-light font-mono">Biografija</li>
-          <li class="mx-8 uppercase text-lg font-light font-mono">
+          <li class="mx-6 uppercase text-lg font-light font-mono">
+            <a href="/biografija">Biografija</a>
+          </li>
+          <li class="mx-6 uppercase text-lg font-light font-mono">
             <a href="/muzika">Muzika</a>
           </li>
         </ul>
-        <a href="/"><h1 class="text-5xl mx-10" style="font-family: hacked;">EBNER</h1></a>
+        <a href="/"
+          ><h1 class="text-5xl mx-10" style="font-family: hacked;">EBNER</h1></a
+        >
         <ul class="mr-auto flex items-center">
-          <li class="mx-8 uppercase text-lg font-light font-mono"><a href="/kontakt">Kontakt</a></li>
-          <li class="mx-8 uppercase text-lg font-light font-mono"><a href="/novosti">Novosti</a></li>
+          <li class="mx-8 uppercase text-lg font-light font-mono">
+            <a href="/kontakt">Kontakt</a>
+          </li>
+          <li class="mx-8 uppercase text-lg font-light font-mono">
+            <a href="/novosti">Novosti</a>
+          </li>
         </ul>
       </div>
     </MenuItems>
